@@ -8,6 +8,7 @@
 
 ## 🚀 Key Features
 
+- **Interactive Dashboard**: Real-time project overview including Git status, environment, and dependencies.
 - **Advanced Scaffolding**: Create production-ready project structures (Node.js, Express/TS, CLI, Static) with optional features like Docker and CI.
 - **Deep Audit & Inspection**: Scan dependencies for license compliance and perform deep file/directory analysis.
 - **Live Watch Engine**: Watch for file changes and automatically trigger development commands.
@@ -35,7 +36,13 @@ npm link
 
 ## 🛠 Usage Guide
 
-### 1. Scaffolding
+### 1. Project Dashboard
+Get a high-level overview of your project's health and status.
+```bash
+fahhh dashboard
+```
+
+### 2. Scaffolding
 Initialize a new project with a standard architecture and optional features.
 ```bash
 fahhh init
@@ -66,6 +73,7 @@ fahhh config get
 
 | Command | Description | Options |
 |---------|-------------|---------|
+| `dashboard` | Interactive project overview | N/A |
 | `init` | Scaffold production hierarchy | N/A |
 | `config` | Manage global engine settings | `get`, `set`, `delete` |
 | `inspect` | Deep inspection of file/dir | `[target]` |
