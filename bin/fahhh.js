@@ -13,6 +13,7 @@ import { profileCommand } from '../commands/profile.js';
 import { serveCommand } from '../commands/serve.js';
 import { auditCommand } from '../commands/audit.js';
 import { deployCommand } from '../commands/deploy.js';
+import { configCommand } from '../commands/config.js';
 import { logger } from '../utils/logger.js';
 
 const program = new Command();
@@ -21,6 +22,17 @@ program
   .name('fahhh')
   .description(chalk.blue('FAHH-CLI: ENTERPRISE DEVELOPMENT ENGINE'))
   .version('3.0.0');
+
+/**
+ * CONFIGURATION
+ */
+program
+  .command('config')
+  .description('FAHH-cli: MANAGE GLOBAL ENGINE SETTINGS')
+  .argument('<action>', 'FAHH-cli: ACTION (get, set, delete)')
+  .argument('[key]', 'FAHH-cli: CONFIGURATION KEY')
+  .argument('[value]', 'FAHH-cli: CONFIGURATION VALUE')
+  .action(configCommand);
 
 /**
  * ARCHITECTURE & SCAFFOLDING
