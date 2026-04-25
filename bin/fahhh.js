@@ -16,6 +16,7 @@ import { deployCommand } from '../commands/deploy.js';
 import { configCommand } from '../commands/config.js';
 import { inspectCommand } from '../commands/inspect.js';
 import { watchCommand } from '../commands/watch.js';
+import { dashboardCommand } from '../commands/dashboard.js';
 import { logger } from '../utils/logger.js';
 
 const program = new Command();
@@ -43,6 +44,11 @@ program
   .command('init')
   .description('FAHH-cli: CONSTRUCT PRODUCTION HIERARCHY')
   .action(initCommand);
+
+program
+  .command('dashboard')
+  .description('FAHH-cli: INTERACTIVE PROJECT OVERVIEW')
+  .action(dashboardCommand);
 
 /**
  * ANALYTICS & AUDIT
