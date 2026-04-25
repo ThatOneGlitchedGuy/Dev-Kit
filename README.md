@@ -8,11 +8,12 @@
 
 ## 🚀 Key Features
 
-- **Advanced Scaffolding**: Create production-ready project structures (Node.js, React, Static) in seconds.
-- **Deep Audit**: Scan dependencies for license compliance and security risks.
+- **Advanced Scaffolding**: Create production-ready project structures (Node.js, Express/TS, CLI, Static) with optional features like Docker and CI.
+- **Deep Audit & Inspection**: Scan dependencies for license compliance and perform deep file/directory analysis.
+- **Live Watch Engine**: Watch for file changes and automatically trigger development commands.
+- **Global Configuration**: Manage persistent CLI settings across your development environment.
 - **Automated Releases**: Seamless semantic versioning, changelog generation, and Git tagging.
 - **Project Analytics**: High-fidelity metrics on LOC, disk footprint, and binary distribution.
-- **High-Concurrency Runtime**: Deploy static sites instantly with a built-in Polka-powered server.
 
 ---
 
@@ -35,33 +36,28 @@ npm link
 ## 🛠 Usage Guide
 
 ### 1. Scaffolding
-Initialize a new project with a standard architecture.
+Initialize a new project with a standard architecture and optional features.
 ```bash
 fahhh init
 ```
 
-### 2. Dependency Audit
-Perform a deep scan of your `node_modules` for license compliance.
+### 2. Live Watcher
+Automatically run commands on file changes.
 ```bash
-fahhh audit
+fahhh watch "npm test"
 ```
 
-### 3. Automated Deployment
-Manage releases following Semantic Versioning.
+### 3. Deep Inspection
+Analyze a specific file or directory's technical details.
 ```bash
-fahhh deploy [--dry-run]
+fahhh inspect ./src/index.js
 ```
 
-### 4. Project Profiling
-Analyze your project's technical footprint.
+### 4. Global Configuration
+Configure your engine settings.
 ```bash
-fahhh profile
-```
-
-### 5. Static Server
-Spin up a high-performance static server.
-```bash
-fahhh serve --port 8080 --dir ./dist
+fahhh config set author "John Doe"
+fahhh config get
 ```
 
 ---
@@ -71,6 +67,9 @@ fahhh serve --port 8080 --dir ./dist
 | Command | Description | Options |
 |---------|-------------|---------|
 | `init` | Scaffold production hierarchy | N/A |
+| `config` | Manage global engine settings | `get`, `set`, `delete` |
+| `inspect` | Deep inspection of file/dir | `[target]` |
+| `watch` | Watch changes & execute command | `<command>` |
 | `audit` | Execute compliance & security audit | N/A |
 | `deploy` | Execute semantic release pipeline | `--dry-run` |
 | `profile` | Generate project analytics | N/A |
