@@ -14,6 +14,7 @@ import { serveCommand } from '../commands/serve.js';
 import { auditCommand } from '../commands/audit.js';
 import { deployCommand } from '../commands/deploy.js';
 import { configCommand } from '../commands/config.js';
+import { inspectCommand } from '../commands/inspect.js';
 import { logger } from '../utils/logger.js';
 
 const program = new Command();
@@ -49,6 +50,12 @@ program
   .command('profile')
   .description('FAHH-cli: GENERATE HIGH-FIDELITY PROJECT ANALYTICS')
   .action(profileCommand);
+
+program
+  .command('inspect')
+  .description('FAHH-cli: DEEP INSPECTION OF FILE OR DIRECTORY')
+  .argument('[target]', 'FAHH-cli: TARGET PATH', '.')
+  .action(inspectCommand);
 
 program
   .command('audit')
