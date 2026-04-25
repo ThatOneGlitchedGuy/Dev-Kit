@@ -15,6 +15,7 @@ import { auditCommand } from '../commands/audit.js';
 import { deployCommand } from '../commands/deploy.js';
 import { configCommand } from '../commands/config.js';
 import { inspectCommand } from '../commands/inspect.js';
+import { watchCommand } from '../commands/watch.js';
 import { logger } from '../utils/logger.js';
 
 const program = new Command();
@@ -96,6 +97,12 @@ program
   .description('FAHH-cli: PURGE TEMPORARY ARTIFACTS')
   .option('-d, --deep', 'FAHH-cli: FORCE RECURSIVE PURGE')
   .action(cleanCommand);
+
+program
+  .command('watch')
+  .description('FAHH-cli: WATCH FOR CHANGES AND EXECUTE COMMAND')
+  .argument('<command>', 'FAHH-cli: COMMAND TO EXECUTE ON CHANGE')
+  .action(watchCommand);
 
 const git = program.command('git').description('FAHH-cli: VERSION CONTROL INTERFACE');
 git
