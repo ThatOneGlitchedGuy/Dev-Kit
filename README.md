@@ -109,5 +109,6 @@ npx c8 npm test
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-* Readme written by AI. Code written by my glitchy mind
-* Use under your own risk, it may or may not run on your machine.
+* probably fine. probably not.
+
+* readme helped by tools, code helped by insomnia
