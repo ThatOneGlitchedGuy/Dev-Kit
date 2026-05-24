@@ -1,12 +1,12 @@
-# FAHH-DevKit ⚙️
+# Dev-Kit ⚙️
 
-**Enterprise-grade development engine for high-performance engineering workflows.**
+**Fahh-grade development engine for high-performance engineering workflows.**
 
-`FAHH-DevKit` is a modular, high-speed CLI toolkit designed to automate the repetitive tasks of modern software engineering. From scaffolding to deployment, it provides a unified interface for complex workflows.
+`Dev-Kit` is a modular, high-speed CLI toolkit designed to automate the repetitive tasks of modern software engineering. From scaffolding to deployment, it provides a unified interface for complex workflows.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **Interactive Dashboard**: Real-time project overview including Git status, environment, and dependencies.
 - **Advanced Scaffolding**: Create production-ready project structures (Node.js, Express/TS, CLI, Static) with optional features like Docker and CI.
@@ -22,7 +22,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/FAHHHH-lab/FAHH-DevKit.git
+git clone https://github.com/ThatOneGlitchedGuy/Dev-Kit.git
 cd FAHH-DevKit
 
 # Install dependencies
@@ -90,7 +90,7 @@ fahhh config get
 
 ---
 
-## 🧪 Development & Testing
+##  Development & Testing
 
 ```bash
 # Run tests
@@ -105,8 +105,9 @@ npx c8 npm test
 
 ---
 
-## 🛡 License
+##  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-**FAHHHH-lab** | build • break • learn • repeat
+* Readme written by AI. Code written by my glitchy mind
+* Use under your own risk, it may or may not run on your machine.
