@@ -1,6 +1,6 @@
-# Contributing to FAHH-DevKit
+# Contributing
 
-First off, thank you for considering contributing to FAHH-DevKit! It's people like you who make it a great tool.
+First off, thank you for considering contributing to this repo! It's people like you who make it a great tool.
 
 ## Code of Conduct
 
@@ -43,4 +43,4 @@ Run tests with:
 npm test
 ```
 
-Happy coding!
+Happy coding! and Thanks FR!
