@@ -22,8 +22,8 @@ import { logger } from '../utils/logger.js';
 const program = new Command();
 
 program
-  .name('fahhh')
-  .description(chalk.blue('FAHH-CLI: ENTERPRISE DEVELOPMENT ENGINE'))
+  .name('fah')
+  .description(chalk.blue('FAH-CLI: ENTERPRISE DEVELOPMENT ENGINE'))
   .version('3.0.0');
 
 /**

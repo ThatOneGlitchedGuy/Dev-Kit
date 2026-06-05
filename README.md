@@ -1,6 +1,6 @@
 # Dev-Kit ⚙️
 
-**Fahh-grade development engine for high-performance engineering workflows.**
+**Fah-grade development engine for high-performance engineering workflows.**
 
 `Dev-Kit` is a modular, high-speed CLI toolkit designed to automate the repetitive tasks of modern software engineering. From scaffolding to deployment, it provides a unified interface for complex workflows.
 
@@ -23,7 +23,7 @@
 ```bash
 # Clone the repository
 git clone https://github.com/ThatOneGlitchedGuy/Dev-Kit.git
-cd FAHH-DevKit
+cd fah-DevKit
 
 # Install dependencies
 npm install
@@ -39,32 +39,32 @@ npm link
 ### 1. Project Dashboard
 Get a high-level overview of your project's health and status.
 ```bash
-fahhh dashboard
+fah dashboard
 ```
 
 ### 2. Scaffolding
 Initialize a new project with a standard architecture and optional features.
 ```bash
-fahhh init
+fah init
 ```
 
 ### 2. Live Watcher
 Automatically run commands on file changes.
 ```bash
-fahhh watch "npm test"
+fah watch "npm test"
 ```
 
 ### 3. Deep Inspection
 Analyze a specific file or directory's technical details.
 ```bash
-fahhh inspect ./src/index.js
+fah inspect ./src/index.js
 ```
 
 ### 4. Global Configuration
 Configure your engine settings.
 ```bash
-fahhh config set author "John Doe"
-fahhh config get
+fah config set author "John Doe"
+fah config get
 ```
 
 ---

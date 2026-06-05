@@ -8,7 +8,7 @@ import { logger } from '../utils/logger.js';
 
 export const dashboardCommand = async () => {
   console.clear();
-  logger.info(chalk.bold.magenta('FAHH PROJECT DASHBOARD v3.0'));
+  logger.info(chalk.bold.magenta('FAH PROJECT DASHBOARD v3.0'));
   
   // 1. Git Status
   let gitInfo = chalk.gray('Not a git repository');
@@ -48,8 +48,8 @@ export const dashboardCommand = async () => {
 
   // 4. Quick Actions
   console.log(chalk.bold('Quick Actions:'));
-  console.log(`- ${chalk.white('fahhh profile')}  : Deep analytics`);
-  console.log(`- ${chalk.white('fahhh doctor')}   : Health check`);
-  console.log(`- ${chalk.white('fahhh watch')}    : Live reload`);
+  console.log(`- ${chalk.white('fah profile')}  : Deep analytics`);
+  console.log(`- ${chalk.white('fah doctor')}   : Health check`);
+  console.log(`- ${chalk.white('fah watch')}    : Live reload`);
   console.log('\n' + chalk.gray('Press Ctrl+C to exit dashboard'));
 };

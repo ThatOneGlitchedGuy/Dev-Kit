@@ -1,17 +1,17 @@
 {
-  "name": "fahhh-devkit",
+  "name": "fah-devkit",
   "version": "3.0.0",
   "description": "Enterprise-grade development engine for high-performance engineering workflows",
   "type": "module",
   "bin": {
-    "fahhh": "./bin/fahhh.js"
+    "fah": "./bin/fah.js"
   },
   "scripts": {
-    "start": "node bin/fahhh.js",
+    "start": "node bin/fah.js",
     "test": "node --test tests/*.test.js",
     "release": "standard-version",
     "lint": "eslint .",
-    "audit": "node bin/fahhh.js audit"
+    "audit": "node bin/fah.js audit"
   },
   "keywords": [
     "cli",
@@ -21,7 +21,7 @@
     "scaffolding",
     "enterprise"
   ],
-  "author": "FAHHHH-lab",
+  "author": "fah-lab",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0",

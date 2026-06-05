@@ -40,7 +40,7 @@ export const analyzeCommand = async () => {
     console.log(`${chalk.gray('node_modules size:')} ${chalk.bold(prettyBytes(size))}`);
     
     if (size > 500 * 1024 * 1024) {
-      console.log(chalk.red('⚠️ Warning: node_modules is quite heavy (>500MB). Consider running fahhh clean.'));
+      console.log(chalk.red('⚠️ Warning: node_modules is quite heavy (>500MB). Consider running fah clean.'));
     } else {
       console.log(chalk.green('✅ node_modules size is within healthy limits.'));
     }

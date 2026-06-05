@@ -3,7 +3,7 @@ import Conf from 'conf';
 const schema = {
   projectName: {
     type: 'string',
-    default: 'my-fahhh-project'
+    default: 'my-fah-project'
   },
   author: {
     type: 'string',
@@ -15,5 +15,5 @@ const schema = {
   }
 };
 
-const config = new Conf({ projectName: 'fahhh-cli', schema });
+const config = new Conf({ projectName: 'fah-cli', schema });
 export default config;

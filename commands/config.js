@@ -10,18 +10,18 @@ export const configCommand = (action, key, value) => {
       logger.info(`${chalk.cyan(key)}: ${val}`);
     } else {
       const all = config.store;
-      console.log(boxen(JSON.stringify(all, null, 2), { title: 'FAHH CONFIG', padding: 1, borderColor: 'cyan' }));
+      console.log(boxen(JSON.stringify(all, null, 2), { title: 'FAH CONFIG', padding: 1, borderColor: 'cyan' }));
     }
   } else if (action === 'set') {
     if (!key || value === undefined) {
-      logger.error('USAGE: fahhh config set <key> <value>');
+      logger.error('USAGE: fah config set <key> <value>');
       return;
     }
     config.set(key, value);
     logger.success(`SET ${chalk.cyan(key)} TO ${chalk.green(value)}`);
   } else if (action === 'delete') {
     if (!key) {
-      logger.error('USAGE: fahhh config delete <key>');
+      logger.error('USAGE: fah config delete <key>');
       return;
     }
     config.delete(key);

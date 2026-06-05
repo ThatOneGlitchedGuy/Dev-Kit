@@ -8,8 +8,8 @@ describe('Config Utility', () => {
   });
 
   test('should be able to set and get values', () => {
-    config.set('author', 'FAHHHH-lab-tester');
-    assert.strictEqual(config.get('author'), 'FAHHHH-lab-tester');
+    config.set('author', 'fah-lab-tester');
+    assert.strictEqual(config.get('author'), 'fah-lab-tester');
     // Cleanup
     config.delete('author');
   });
