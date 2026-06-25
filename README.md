@@ -1,6 +1,6 @@
 # Dev-Kit ⚙️
 
-**Fah-grade development engine for high-performance engineering workflows.**
+**Development engine for high-performance engineering workflows.**
 
 `Dev-Kit` is a modular, high-speed CLI toolkit designed to automate the repetitive tasks of modern software engineering. From scaffolding to deployment, it provides a unified interface for complex workflows.
 
