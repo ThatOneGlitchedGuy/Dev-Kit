@@ -18,7 +18,7 @@
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -34,7 +34,7 @@ npm link
 
 ---
 
-## 🛠 Usage Guide
+## Usage 
 
 ### 1. Project Dashboard
 Get a high-level overview of your project's health and status.
@@ -69,7 +69,7 @@ fah config get
 
 ---
 
-## 🔧 Core Commands
+## Core Commands
 
 | Command | Description | Options |
 |---------|-------------|---------|
